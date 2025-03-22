@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="learningselenium.tests.ErrorValidationTest">
+        <methods>
+          <include name="pageLoginError"/>
+          <include name="getUrl"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- learningselenium.tests.ErrorValidationTest -->
+      <class name="learningselenium.tests.endToEndTest">
+        <methods>
+          <include name="submitTest" invocation-numbers="0 1"/>
+          <include name="getUrl"/>
+          <include name="verifyOrder"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- learningselenium.tests.endToEndTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
