@@ -13,7 +13,7 @@ public class ErrorValidationTest extends BaseTest {
 	public void pageLoginError()
 	{
 		landingPage.loginDetails("raju.saranyaa@gmail.com","Dancingdoll@18");
-		Assert.assertEquals("Incorrect email o password.", landingPage.loginErrorValidation());
+		Assert.assertEquals("Incorrect email or password.", landingPage.loginErrorValidation());
 	}
 	
 	@Test(groups= {"ErrorHandling"})
