@@ -39,6 +39,7 @@ public class endToEndTest extends BaseTest {
 		OrderConfomationPage orderConformationPage = submitOrder.conformationButton();
 		String orderConformationText = orderConformationPage.getConformationText();
 		Assert.assertEquals(orderConformationText, "THANKYOU FOR THE ORDER.");
+		System.out.println("checking push command");
 	}
 	
 	//verify order is there in order history page
